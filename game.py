@@ -59,7 +59,7 @@ print("The Kanbalese police stop you and try to collect taxes from you! What do 
 print("1. Fight the police")
 print("2. Just pay your taxes")
 decision = ""
-while(decision == ""):
+while(decision == "" or decision > "2" or decision == 0 ):
     decision = input("Pick a number")
     if (decision == "1"):
         print("You got arrested! Game over!")
@@ -69,6 +69,4 @@ while(decision == ""):
         player_money = player_money * 0.8
         print("The money you have left is:")
         print(str(player_money))
-    else:
-        print("Please enter 1 or 2")
 #  End section #
